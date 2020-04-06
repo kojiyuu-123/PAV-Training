@@ -1,4 +1,4 @@
-#Using commands
+#Using commands.
 chmod 777 "bash_file_2.sh"
 
 #Open VS Code
