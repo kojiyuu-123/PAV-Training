@@ -1,4 +1,4 @@
-chmod 777 "bash_file_3/bash_file_3.sh"
+chmod 755 "bash_file_3/bash_file_3.sh"
 
 #search the word,"character" in test.txt
 
