@@ -1,7 +1,8 @@
-chmod 777 "bash_file_5.sh"
+chmod 775 "bash_file_5.sh"
 
 # clone repositories
-url_array=(https://github.com/kojiyuu-123/bash_file.git https://github.com/kojiyuu-123/bash_file_2.git https://github.com/kojiyuu-123/bash_file_3.git https://github.com/kojiyuu-123/bash_file_4.git)
+repos_str="https://github.com/kojiyuu-123"
+url_array=(${repos_str}/bash_file.git ${repos_str}/bash_file_2.git ${repos_str}/bash_file_3.git ${repos_str}/bash_file_4.git)
 
 for i in ${url_array[@]};
 do
