@@ -1,5 +1,5 @@
 #Using commands
-chmod 755 "bash_file_2/bash_file_2.sh"
+chmod 775 "bash_file_2/bash_file_2.sh"
 
 #Open VS Code
 #code -n
