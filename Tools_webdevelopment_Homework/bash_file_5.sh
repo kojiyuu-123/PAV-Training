@@ -17,7 +17,7 @@ do
 	git checkout master
 	git pull origin master
 	cd ../
-	./${j}/bash_file*.sh
+	./${j}/*.sh
 	echo -e ""
 done
 
