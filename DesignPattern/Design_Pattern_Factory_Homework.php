@@ -10,17 +10,41 @@
 
 <?php
 
-class LoggerManager{
+interface Log{
+	public function message($ouputMsg);
+}
+
+class StdLogger implements Log{
+	public function message($ouputMsg){
+		echo "Std logger: $ouputMsg<br>";
+	}
+}
+
+class FileLogger implements Log{
+	public function message($ouputMsg){
+		echo "File logger: $ouputMsg<br>";
+	}
+}
+
+class LoggerManager {
 	protected $message;
 	
 	function __construct($message){
 		$this->message=$message;
 	}
 	
-	public function log($ouputMsg){
-		echo "$this->message logger: $ouputMsg<br>";
+	function log($ouputMsg){
+		if($this->message=='file'){
+			$obj=new FileLogger;
+		}
+		elseif($this->message=='std'){
+			$obj=new StdLogger;
+		}
+		else{
+			echo "couldn't output message.<br>";
+		}
+		$obj->message($ouputMsg);
 	}
-	
 }
 
 // Implement your classes here
