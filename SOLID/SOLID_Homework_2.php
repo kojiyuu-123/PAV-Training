@@ -31,7 +31,7 @@ class HumanWorker implements WorkAbleInterface, SleepAbleInterface{
 class RobotWorker implements WorkAbleInterface{
 	public  function work(){
 		if ($this->hasPower()) {
-			HumanWorker::work();
+			var_dump('works');
 		}
 	}
 	
