@@ -3,7 +3,7 @@
 <body>
 <?php
 print("<h2>Algorithms</h2>");
-print("<h2>Homework_2</h2><br>");
+print("<h2>Homework_3</h2><br>");
 
 function print_array($arr,$find_ind,$value,$search_sum){
 	if($find_ind!=-1){
