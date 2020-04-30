@@ -13,6 +13,12 @@ function sum_pairs($arr1,$arr2,$k){
 		return;
 	}
 	
+	if($k>sizeof($arr1)*sizeof($arr2)){
+		print("k = ".$k." is out of range.<br>");
+		print("Please k <= ".sizeof($arr1)*sizeof($arr2)."<br>");
+		return;
+	}
+	
 	$count=0;
 	
 	$size_1=sizeof($arr1);
@@ -24,9 +30,11 @@ function sum_pairs($arr1,$arr2,$k){
 	$in_1=$ind_1+1;
 	$in_2=$ind_2+1;
 	
+	
+	
 	print("[".$arr1[$ind_1].",".$arr2[$ind_2]. "] ");
 	$count++;
-	if($count>=$k){
+	if($count==$k){
 		return;
 	}
 
@@ -86,7 +94,6 @@ function sum_pairs($arr1,$arr2,$k){
 	}
 	
 	while($ind_1<sizeof($arr1)){
-
 		
 		if($count>=$k){
 			return;
