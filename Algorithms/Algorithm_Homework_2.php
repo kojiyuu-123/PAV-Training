@@ -88,14 +88,14 @@ function sum_pairs($arr1,$arr2,$k){
 			$sum=$arr1[$ind_1]+$arr2[$in_2];
 		}
 
-		if($count>=$k){
+		if($count==$k){
 			return;
 		}
 	}
 	
 	while($ind_1<sizeof($arr1)){
 		
-		if($count>=$k){
+		if($count==$k){
 			return;
 		}
 		
@@ -107,7 +107,7 @@ function sum_pairs($arr1,$arr2,$k){
 
 	while($ind_2<sizeof($arr2)){
 		
-		if($count>=$k){
+		if($count==$k){
 			return;
 		}
 		
